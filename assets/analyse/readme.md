@@ -38,6 +38,12 @@ Le résultat du vote affichera un gif animé de l'API https://yesno.wtf/
 * Comp. 8 : Mettre en place une application simple de mobilité numérique (niv 3)
 * Comp. 9 : Utiliser l'anglais dans son activité professionnelle en informatique (niv 2)
 
+## 
+## 
+## 
+## 
+## 
+## 
 ## Partie 2 : le back (à réaliser dans un second temps)
 * **Créer une base de donnée pour enregister les votes.**  
     Complexité : *Complexe*  

@@ -1,0 +1,103 @@
+/*     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,800" rel="stylesheet"> */
+/* https://fonts.googleapis.com/css?family=Montserrat:100,300,400,800 */
+/* Specify in CSS */
+/* Use the following CSS rules to specify these families:*/
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #000;
+    background-color: #fafafa;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    padding-bottom: 6rem;
+    min-height: 100%;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 36px;
+    color: #311C10;
+    margin-bottom: 3rem;
+}
+
+p {
+    font-weight: 400;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    color: #e8690d;
+    background-color: #efefef;
+}
+
+header.img {
+    float: right;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+main {
+    margin-top: 6rem;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+button {
+    width: 20%;
+    padding: 0.5rem;
+    margin: 2%;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #fbfbfb;
+    border: 2px solid #fbfbfb;
+    color: #000;
+    text-decoration: underline;
+}
+
+.btnYes {
+    background-color: #5eb130;
+    border: 2px solid #5eb130;
+}
+
+.btnNo {
+    background-color: #E52816;
+    border: 2px solid #E52816;
+}
+
+.btn:hover,
+.btnYes:hover,
+.btnNo:hover {
+    border: 2px solid #000;
+    color: #000;
+}
+
+.sideBar {
+    background-color: orange;
+}
+
+.whitegrey {
+    background-color: #fafafa;
+}
+
+

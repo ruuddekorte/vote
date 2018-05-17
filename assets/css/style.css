@@ -1,0 +1,197 @@
+/* ################ STYLE.CSS ################## */
+
+
+/* ################ HTML STRUCTURE ################## */
+
+* {
+    box-sizing: border-box;
+}
+
+#app {
+    display: flex;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    width: 100vw;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #000;
+    background-color: #fafafa;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    /* padding: 1rem;
+    padding-bottom: 6rem;*/
+    min-height: 100%;
+}
+
+header {
+    width: 100%;
+    padding: 1rem;
+    background: #aaa;
+    padding: 1rem;
+    color: #e8690d;
+    background-color: #efefef;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+main {
+    flex-grow: 2;
+    padding: 1rem;
+    margin-top: 6rem;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+
+aside {
+    display: none;
+    padding: 1rem; 
+    padding-top: 6rem;
+    width: 300px;
+    background: orange;
+    height: 100vh;
+}
+
+aside.active {
+    display: block;
+}
+
+aside a {
+    display: block;
+    padding: 10px 5px;
+    color: #666;
+    border-bottom: 1px solid #bbb;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+
+/* ################################## */
+
+
+/*     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,800" rel="stylesheet"> */
+
+
+/* https://fonts.googleapis.com/css?family=Montserrat:100,300,400,800 */
+
+
+/* Specify in CSS */
+
+
+/* Use the following CSS rules to specify these families:*/
+
+
+/* ################ HTML BASIC ################## */
+
+h1 {
+    font-weight: 800;
+    font-size: 36px;
+    color: #311C10;
+    margin-bottom: 3rem;
+}
+
+p {
+    font-weight: 400;
+}
+
+
+
+/* ################ BUTTONS ################## */
+
+.gear {   /* gear-button top left */
+    width: 60px;
+    height: 60px;
+    z-index: 100;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.topgear {   /* gear-button top left */
+    width: 60px;
+    height: 60px;
+    z-index: 200;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+button {
+    width: 20%;
+    padding: 0.5rem;
+    margin: 2%;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #fbfbfb;
+    border: 2px solid #fbfbfb;
+    color: #000;
+    text-decoration: underline;
+}
+
+.btnYes {
+    background-color: #5eb130;
+    border: 2px solid #5eb130;
+}
+
+.btnNo {
+    background-color: #E52816;
+    border: 2px solid #E52816;
+}
+
+.btn:hover,
+.btnYes:hover,
+.btnNo:hover {
+    border: 2px solid #000;
+    color: #000;
+}
+
+.sideBar {
+    background-color: orange;    /* one ugly orange */
+}
+
+.whitegrey {
+    background-color: #fafafa;    /* 'dirty' white */
+}
+
+
+
+
+/* ################ SCRAPS and THE REST ################## */
+
+
+/*.main { 
+    display: flex; 
+    justify-content: space-between;
+  }*/
+
+  aside hr {     /* line in 'aside' 50% width centered  */
+    width: 50%;
+  } 
+
+  .icon {
+    width: 14px;
+    height: 14px;
+  }
