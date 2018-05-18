@@ -1,6 +1,30 @@
 // app.js
 // #####################################################################
+Vue.config.devtools = true;
 
+console.log('hello world');
+
+
+Vue.component('app-list',{
+  data () {
+    return { namelist: null }
+  },
+  mounted () {
+    console.log('app-list');
+    $.getJSON('assets/list.json', json => {
+      this.namelist = json;
+      console.log(namelist);
+    });  //  Invalid left-hand side in assignment
+  },
+
+  template: `
+    <ul id="example-1">
+        <li v-for="namelist in name">
+            {{ item.name }}
+        </li>
+    </ul>
+  `
+})
 
 
 
@@ -13,24 +37,39 @@ Vue.component('app-nav', {
   },
   template: `
     <aside :class="{ active: active}">
-      <div class="element3"><img class="topgear" src="assets/img/menu_open.svg"  @click="toggleNav()"></div>
+      <div class="element3"><img class="topgear" src="assets/img/menu_open.svg" @click="toggleNav()"></div>
       <div> 
         <form class="aside-question" @submit.prevent="onSubmit">
-        <label for="question">Question:</label>
-                  <input type="submit" value="Submit"> 
-             
+          <div> <label for="question">Question:</label></div>
+          <div> [ input field here ]</div>
+          <div> <input type="submit" value="Submit"> </div>
         </form>
       </div>
       <div>  </div>
+      <app-list></app-list>
       <div> <hr> </div>
       <div> Liste : </div>
-      <div> <img src="assets/img/error.svg" class="icon" /> John </div>
-      <div> <img src="assets/img/error.svg" class="icon" /> Jake </div>
-      <div> <img src="assets/img/success.svg" class="icon" /> Bob </div>
+      <div> <img src="assets/img/error.svg" class="icon" /> Ana </div>
+      <div> <img src="assets/img/error.svg" class="icon" /> Antoine </div>
+      <div> <img src="assets/img/error.svg" class="icon" /> Céline </div>
+      <div> <img src="assets/img/error.svg" class="icon" /> Corentin </div>
+      <div> <img src="assets/img/error.svg" class="icon" /> Christelle </div>
+      <div> <img src="assets/img/error.svg" class="icon" /> David </div>
+      <div> <img src="assets/img/error.svg" class="icon" /> Florian </div>
+      <div> <img src="assets/img/error.svg" class="icon" /> Fréderic </div>
+      <div> <img src="assets/img/error.svg" class="icon" /> Grégory </div>
+      <div> <img src="assets/img/error.svg" class="icon" /> Ilham </div>
+      <div> <img src="assets/img/error.svg" class="icon" /> Joris </div>
+      <div> <img src="assets/img/error.svg" class="icon" /> Mathéo </div>
+      <div> <img src="assets/img/success.svg" class="icon" /> Ruud </div>
+      <div> <img src="assets/img/error.svg" class="icon" /> Vanessa</div>
       <div> <hr> </div>
       <div> &nbsp; </div>
       <div> &nbsp; </div>
+
+      <!-- menu items from original code snippet -->
       <nav> <a href="#">Item1</a> <a href="#">Item2</a> <a href="#">Item3</a> </nav>
+
     </aside>
   `,
   methods: {
@@ -40,7 +79,7 @@ Vue.component('app-nav', {
   },
   mounted () {
     this.$parent.$on('toggleNav', () => {
-      console.log('received')
+      console.log('app-nav')
       this.active = !this.active
     })
   }

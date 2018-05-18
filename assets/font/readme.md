@@ -1,3 +1,5 @@
+# Notes : Dossier /ASSETS/FONT
+
 Embed Font
 To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
 

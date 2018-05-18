@@ -1,4 +1,6 @@
-# Mise en place d'un système de vote
+# Notes : Dossier /ASSETS/ANALYSE
+
+## Mise en place d'un système de vote
 Nous souhaiterons mettre en place un système de vote interne à Simplon Rodez.  
 L'objectif est de savoir si la majorité des apprenants est d'accord avec une question posée.  
 L'application prendra la forme d'une IHM dans lequel, l'administrateur pourra poser une question et les utilisateurs pourront inscrire leur nom (d'après une liste) et voter.  
