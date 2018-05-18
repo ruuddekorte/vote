@@ -1,5 +1,5 @@
-// sb.js
-
+// app.js
+// #####################################################################
 
 
 
@@ -14,19 +14,23 @@ Vue.component('app-nav', {
   template: `
     <aside :class="{ active: active}">
       <div class="element3"><img class="topgear" src="assets/img/menu_open.svg"  @click="toggleNav()"></div>
-      <div> Question : </div>
-      <div> /[input/] </div>
+      <div> 
+        <form class="aside-question" @submit.prevent="onSubmit">
+        <label for="question">Question:</label>
+                  <input type="submit" value="Submit"> 
+             
+        </form>
+      </div>
+      <div>  </div>
       <div> <hr> </div>
       <div> Liste : </div>
       <div> <img src="assets/img/error.svg" class="icon" /> John </div>
-      <div> <img src="assets/img/icons.svg" class="icon" /> Jake </div>
+      <div> <img src="assets/img/error.svg" class="icon" /> Jake </div>
       <div> <img src="assets/img/success.svg" class="icon" /> Bob </div>
       <div> <hr> </div>
-      <nav>
-        <a href="#">Item1</a>
-        <a href="#">Item2</a>
-        <a href="#">Item3</a>
-      </nav>
+      <div> &nbsp; </div>
+      <div> &nbsp; </div>
+      <nav> <a href="#">Item1</a> <a href="#">Item2</a> <a href="#">Item3</a> </nav>
     </aside>
   `,
   methods: {
@@ -71,7 +75,7 @@ Vue.component('app-main', {
         </div>
       </main>
       <footer>
-          &copy; SIMPLON RODEZ - 2018
+          <div class="nothing"> &copy; SIMPLON RODEZ - 2018</div>
       </footer>
     </div>
   `,
